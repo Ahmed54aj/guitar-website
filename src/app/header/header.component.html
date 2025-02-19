@@ -1,0 +1,24 @@
+<header>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+            <button ngbNavLink>Home
+                <app-home-tab></app-home-tab>
+            </button>
+            <ng-template ngbNavContent>            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <button ngbNavLink>Gaming</button>
+            <ng-template ngbNavContent>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+            <button ngbNavLink>Being Active</button>
+            <ng-template ngbNavContent>
+            </ng-template>
+        </li>
+    </ul>
+    
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    
+    <pre>Active: {{ active }}</pre>
+</header>

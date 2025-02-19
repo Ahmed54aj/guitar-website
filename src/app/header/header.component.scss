@@ -1,0 +1,27 @@
+button[ngbNavLink] {    
+    padding-right: 5px;   
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+button {
+     position: relative;
+}
+  
+button[ngbNavLink]:hover {
+    z-index: 5;
+    background-color: transparent;
+    border: #39FF14;
+    color: #39FF14;
+    box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14;
+    padding-right: 20px; 
+  }
+
+  button[ngbNavLink].active {
+    z-index: 5;
+    box-shadow: 0 0 10px #8000FF, 0 0 20px #8000FF;
+    color: #8000FF; 
+    background-color: transparent;
+    border: 2px solid #8000FF;
+    text-shadow: 0 0 10px #8000FF, 0 0 20px #8000FF;    padding-right: 30px;  // Add 50px padding-right on hover or when active
+  }

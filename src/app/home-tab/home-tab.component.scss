@@ -1,12 +1,6 @@
-button[ngbNavLink] {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
 .svgContainer {
-    position: relative;
+    position: absolute;
+    right: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
